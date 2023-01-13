@@ -16,3 +16,11 @@
 /node_modules
 update.sh
 gulpfile.js
+/js
+/design
+.vscode
+/images
+README-template.node_modules
+.gitignore
+style-guide.node_modules
+
