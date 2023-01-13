@@ -8,20 +8,24 @@
     .details__card {
             @include grid;
     .all{
-        background: var(--CardBG);
+     background: var(--CardBG);
         border-radius: 5px;
         padding: 30px;
         cursor: pointer;
-        &:hover{
-            background: var(--DText);
+    &:hover {
+            background: var(--hover);
+            opacity: 1;
         }
         .info{
             // width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-           
-                margin-bottom: 25px;
+            
+                margin-bottom: 50px;
+                img{
+                   object-fit: contain;
+                }
             
             p{
                 text-transform: capitalize;
@@ -32,13 +36,18 @@
             
         }
         .ret{
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-auto-flow: row;
+        display: flex;
+        flex-direction: row;
+        height: 0px;
+        align-items: center;
+        justify-content: space-between;
             h2{
                 color: var(--Text);
                 font-size: 1.7em;
+            }
+            p{
+                position: relative;
+                top: -15px;
             }
         }
     }

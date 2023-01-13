@@ -16,7 +16,7 @@
         cursor: pointer;
 
         &:hover{
-            background: rgba(231, 223, 223, 0.356);
+            background: var(--hover);
             opacity: 1;
         }
         

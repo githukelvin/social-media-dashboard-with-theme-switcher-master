@@ -82,11 +82,10 @@
     width: 100%;
     height: 250px;
 }
-p{
- display: grid;
- place-items: center;
- grid-auto-flow: column;
- gap: .3em;
+p {
+    display: flex;
+    place-items: center;
+    gap: .3em;
 }
 .ocer{
     margin-block: 1.2em;
