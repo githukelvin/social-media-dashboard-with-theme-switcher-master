@@ -1,5 +1,6 @@
 @forward './globals/index';
 @use "./globals/colors" as *;
+@forward "./layout/";
 .main__header {
     display: grid;
     grid-template-columns: 1fr;
@@ -79,5 +80,16 @@
     background-color: var(--BGPattern);
     z-index: -110;
     width: 100%;
-    height: 350px;
+    height: 300px;
+}
+p{
+ display: grid;
+ place-items: center;
+ grid-auto-flow: column;
+ gap: .3em;
+}
+.ocer{
+    margin-block: 2em;
+    font-size: 1.5em;
+    color: var(--DText);
 }

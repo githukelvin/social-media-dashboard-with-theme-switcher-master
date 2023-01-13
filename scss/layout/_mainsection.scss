@@ -1,0 +1,20 @@
+@use "./mixin" as *;
+
+.main__section{
+    width: 100%;
+.details{
+    .details__card {
+            @include grid;
+    .all{
+        background: var(--CardBG);
+        border-radius: 5px;
+        padding: 30px;
+        cursor: pointer;
+        &:hover{
+            background: var(--DText);
+        }
+    }
+    
+        }
+}
+}

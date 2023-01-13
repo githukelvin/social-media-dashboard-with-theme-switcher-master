@@ -1,0 +1,16 @@
+@mixin color($color){
+    border-top: 4px solid ;
+    border-color: $color;
+}
+@mixin com($color){
+    color: $color;
+    padding: 0 0.3em;
+        font-size: 14px;
+        font-weight: 400;
+}
+@mixin grid{
+        display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            gap: 2em;
+}

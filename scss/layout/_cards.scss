@@ -1,0 +1,38 @@
+@use "../globals/colors" as *;
+@use  "./mixin" as *;
+
+.cards{
+ @include grid ;
+    .card{
+        width: 300px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: var(--CardBG);
+        border-radius: 10px ;
+        gap: 10px;
+        cursor: pointer;
+
+        &:hover{
+            background: var(--BGPattern);
+        }
+        
+    }
+        .fcard{
+            @include color($Facebook)
+        } .tcard{
+            @include color($Twitter)
+        } .Icard{
+            @include color($Instagram)
+        } .Ycard{
+            @include color($YouTube)
+        }
+}
+.up{
+  @include com($LimeGreen)
+}
+.down{
+    @include com($BrightRed)
+}
