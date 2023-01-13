@@ -1,7 +1,23 @@
+@use "./colors" as *;
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    // font-size: 14px;
 }
+body{
+    background: var(--BG);
+}
+.main{
+    max-width: 1440px;
+        margin: 0 auto;
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr;
+    grid-template-rows:auto;
+}
+

@@ -1,0 +1,37 @@
+$LimeGreen: hsl(163, 72%, 41%);
+$BrighRed: hsl(356, 69%, 56%);
+
+$Facebook: hsl(208, 92%, 53%);
+$Twitter: hsl(203, 89%, 53%);
+$Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+$YouTube: hsl(348, 97%, 39%);
+
+// Dark Theme
+
+$Toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+
+// #### Light Theme
+
+$Toggle: hsl(230, 22%, 74%);
+
+// ### Neutral
+
+// #### Dark Theme
+
+.dark-theme{
+        --BG: hsl(230, 17%, 14%);
+        --BGPattern: hsl(232, 19%, 15%);
+        --CardBG: hsl(228, 28%, 20%);
+        --DText: hsl(228, 34%, 66%);
+        --Text: hsl(0, 0%, 100%);
+}
+
+// #### Light Theme
+
+.light-theme{
+        --BG: hsl(0, 0%, 100%);
+        --BGPattern: hsl(225, 100%, 98%);
+        --CardBG: hsl(227, 47%, 96%);
+        --DText: hsl(228, 12%, 44%);
+        --Text: hsl(230, 17%, 14%);
+}
