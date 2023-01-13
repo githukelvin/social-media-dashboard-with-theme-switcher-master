@@ -21,6 +21,5 @@ gulpfile.js
 .vscode
 /images
 README-template.node_modules
-.gitignore
 style-guide.node_modules
 
