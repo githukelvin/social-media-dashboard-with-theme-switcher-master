@@ -80,7 +80,7 @@
     background-color: var(--BGPattern);
     z-index: -110;
     width: 100%;
-    height: 300px;
+    height: 250px;
 }
 p{
  display: grid;
@@ -89,7 +89,7 @@ p{
  gap: .3em;
 }
 .ocer{
-    margin-block: 2em;
+    margin-block: 1.2em;
     font-size: 1.5em;
-    color: var(--DText);
+    color: var(--Text);
 }

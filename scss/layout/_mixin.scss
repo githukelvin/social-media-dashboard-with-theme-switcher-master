@@ -1,5 +1,6 @@
 @mixin color($color){
-    border-top: 4px solid ;
+    border-top-width: 4px;
+    border-style: solid;
     border-color: $color;
 }
 @mixin com($color){
@@ -7,6 +8,7 @@
     padding: 0 0.3em;
         font-size: 14px;
         font-weight: 400;
+        margin-top: 2.2em;
 }
 @mixin grid{
         display: grid;
