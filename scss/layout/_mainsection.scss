@@ -1,5 +1,6 @@
 @use "./mixin" as *;
 @use "../globals/colors" as *;
+@use "../globals/responsiveness" as *;
 
 .main__section{
     width: 100%;
@@ -7,6 +8,9 @@
 .details{
     .details__card {
             @include grid;
+            @include responsivenss(small) {
+                    grid-template-columns: 1fr;
+                }
     .all{
      background: var(--CardBG);
         border-radius: 5px;

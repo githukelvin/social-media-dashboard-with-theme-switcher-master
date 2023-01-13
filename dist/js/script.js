@@ -1,0 +1,1 @@
+const dot=document.querySelector(".dot"),bod=document.querySelector(".input"),bd=document.querySelector("body");bod.addEventListener("click",(()=>{console.log(bod.checked),bod.checked?(bd.classList.remove("light-theme"),bd.classList.add("dark-theme"),dot.classList.add("toggle")):(dot.classList.remove("toggle"),bd.classList.remove("dark-theme"),bd.classList.add("light-theme"))}));

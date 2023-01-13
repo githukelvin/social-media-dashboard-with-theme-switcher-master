@@ -1,8 +1,15 @@
 @use "../globals/colors" as *;
 @use  "./mixin" as *;
-
+@use "../globals/responsiveness" as *;
 .cards{
  @include grid ;
+
+ @include responsivenss(small){
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    grid-template-rows: auto;
+    place-items: center;
+ }
     .card{
         width: 300px;
         height: 250px;

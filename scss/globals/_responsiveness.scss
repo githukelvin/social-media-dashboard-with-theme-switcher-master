@@ -1,0 +1,10 @@
+$screens:(
+    'small':21.875em,
+    "medium":50em
+);
+
+@mixin responsivenss($size){
+    @media screen and (max-width:map-get($screens,$size)) {
+      @content;  
+    }
+}

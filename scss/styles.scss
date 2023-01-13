@@ -1,6 +1,8 @@
 @forward './globals/index';
 @use "./globals/colors" as *;
 @forward "./layout/";
+@use "./globals/responsiveness" as *;
+
 .main__header {
     display: grid;
     grid-template-columns: 1fr;
@@ -12,6 +14,40 @@
         flex-direction: row;
         justify-content: space-between;
         color: var(--Text);
+
+        @include responsivenss(small){
+            .right{
+                margin-bottom: 20px;
+                position: relative;
+
+                ::before{
+                    content: "";
+                    width:100%;
+                    height:2px;
+                    margin-top: 50px;
+                    background:var(--DText);
+                    position: absolute;
+                    bottom: -15px;
+                    left: 0;
+                    
+                }
+            }
+           
+        flex-direction: column;
+        .left{
+            width:100%;
+            
+            input{
+                position: relative;
+                left: 55%;
+            }
+            .dot{
+                position: relative;
+                left:100px;
+            }
+        }
+        }
+
 
         .right{
             display: flex;
@@ -70,7 +106,8 @@
                     transition: transform .3s ease-out;
                    
 
-                }      }
+                }     
+             }
     }
 }
 
